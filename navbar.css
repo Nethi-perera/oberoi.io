@@ -13,12 +13,15 @@ li{
 
 }
 li a{
-	display: block;
-	padding-left: 8px;
+	display:inline-block;
+	color: white;
+	padding:14px 16px;
 	text-decoration: none;
 	font-family: verdana; 
 }
-
+li a:hover{
+	background-color: #e08787;
+}
 
 
 img{
@@ -29,28 +32,28 @@ h1{
 	  font-family: "Sofia";
   font-size: 22px;
 }
-* {
-  box-sizing: border-box;
+
+#one{
+	background-color: #d1b4ab;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 300px; /* Should be removed. Only for demonstration */
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 #intro{
-	width: 45%;
-	height: 45%;
-	align-content: center;
+	width: 50%;
+	height: 150%;
+    border-radius: 50%;
+	
 }
-
-
+.div5{
+	float: right;
+	width: 50%;
+	height: 200px;
+	
+	
+}
+.div3{
+	float: left;
+	width: 50%;
+	height: 150px;
+	
+}
