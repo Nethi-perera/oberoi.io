@@ -33,32 +33,36 @@ h1{
   font-size: 22px;
 }
 
-/*#one{
+#one{
 	background-color: #d1b4ab;
-}*/
+}
 
 
 #intro{
-	width: 50%;
-	height: 150%;
-    border-radius: 50%;
+	padding-left:0%;
+	width: 270%;
+	height: 320%;
+    border-radius: 20%;
 	
 }
 .div5{
-	float: right;
+	padding-left:30%;
+	padding-right:5%;
+	padding-bottom:12%;
+	absolute: right;
 	width: 50%;
 	height: 200px;
 	
 	
 }
 .div3{
-	float: left;
+	absolute: left;
 	width: 50%;
 	height: 150px;
 	
 }
 * {box-sizing: border-box}
-
+<!-- for the registration -->
 /* Add padding to containers */
 .container {
   padding: 16px;
