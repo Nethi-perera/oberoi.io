@@ -33,15 +33,17 @@ h1{
   font-size: 22px;
 }
 
-/*#one{
+#one{
 	background-color: #d1b4ab;
-}*/
+}
 
 
 #intro{
 	width: 50%;
 	height: 150%;
     border-radius: 50%;
+    margin-left: 20%;
+
 	
 }
 .div5{
@@ -55,6 +57,7 @@ h1{
 	float: left;
 	width: 50%;
 	height: 150px;
+	font-size: 12px;
 	
 }
 * {box-sizing: border-box}
