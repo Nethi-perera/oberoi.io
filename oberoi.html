@@ -3,6 +3,9 @@
 <head>
 	<title>Home</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!--navbar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!--carousal bootsrap-->
     <meta charset="utf-8">
@@ -32,30 +35,70 @@
 		 font-family: "Sofia";
          font-size: 30px;
 	         }
-	         ul{
-	background-color: #0b8768;
-	margin: 0;
-	padding: 0;
-	color: black;
-	overflow: hidden;
-
+	/*navbar*/
+	    body {
+  font-family: Arial, Helvetica, sans-serif;
 }
-        li{
-	list-style-type: none;
-	float: left;
-        }
 
-      li a{
-	display:inline-block;
-	color: white;
-	padding:14px 16px;
-	text-decoration: none;
-	font-family: verdana; 
-         }
+.navbar {
+  overflow: hidden;
+  background-color: #0b8768;
+}
 
-        li a:hover{
-	background-color: #8bc41f;
-        }
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #8bc41f;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #bfe094;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
   .w3-container{
   	      padding-left: 50px;
   	      padding-top:50px;
@@ -135,16 +178,56 @@
       <h1 style="color:black" align="center"><i>Sea Side South Park</i></h1>
 		<h2 style="color:#857d42" align="center">Sri Lanka</h2>
 	<!--navbar-->
-        <ul>
-		<li><a class="active" href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/oberoi.html">Home</a></li>
-		<li><a href="#" class="right">About Us</a></li>
-		<li><a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/contact.html">Contact Us</a></li>
-		<li><a href="#">Room</a></li>
-		<li><a href="C:\Users\nethma\Desktop\git hub website\hotel-website\bootstrap 4 sea side hotel.html" class="dropdown">Multiple Hotel</a></li>
-    <li><a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/Sea_Side_South_Park.html">Hotel Reservation</a></li>
-		<li><a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/registration.html">Registration</a></li>
-	    </ul>
+     <div class="navbar">
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/oberoi.html">Home</a>
+  <a href="#">About Us</a>
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/contact.html">Contact Us</a>
+  <div class="dropdown">
+
+    <button class="dropbtn"><a href="">Room</a>
+   <!-- <i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Check Availability</a>
+      <a href="#">Booking</a>
+      
+    </div>
+  </div>
+  
+   <div class="dropdown">
+    <button class="dropbtn"><a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/Sea_Side_South_Park.html">Hotel Reservation</a>
+      <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="">Booking</a>
+      
+    </div>
+  </div>
+     
+      <div class="dropdown">
+    <button class="dropbtn"><a href="C:\Users\nethma\Desktop\git hub website\hotel-website\bootstrap 4 sea side hotel.html">Multiple Hotel</a>
+     <!-- <i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="#">View Photo Gallery</a>
+      <a href="#">Hotel Facilities</a>
+      <a href="">Map</a>
+      </div>
+    </div>
     
+     <div class="dropdown">
+    <button class="dropbtn"><a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/registration.html">Registration</a>
+      <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="">Login</a>
+     
+      </div>
+    </div>
+</div>
+
+
+
 	    <!--carousal starts-->
 	    <div class="container">
   <h2 style="font-family:verdana;"><i>Spend your tour with us</i></h2>
@@ -351,6 +434,15 @@ Each of our restaurants has their own distinct Sea Side flavour.</p><br>
 
 <div class="responsive">
   <div class="gallery">
+    <a target="_blank" href="spa3.jpg">
+      <img src="spa3.jpg" alt="Northern Lights" width="600" height="400">
+    </a>
+    <div class="desc">AYURVEDIC TREATMENT</div>
+  </div>
+</div>
+
+<div class="responsive">
+  <div class="gallery">
     <a target="_blank" href="gym.jpg">
       <img src="gym.jpg" alt="Northern Lights" width="600" height="400">
     </a>
@@ -358,14 +450,7 @@ Each of our restaurants has their own distinct Sea Side flavour.</p><br>
   </div>
 </div>
 
-<div class="responsive">
-  <div class="gallery">
-    <a target="_blank" href="spa3.jpg">
-      <img src="spa3.jpg" alt="Northern Lights" width="600" height="400">
-    </a>
-    <div class="desc">AYURVEDIC TREATMENT</div>
-  </div>
-</div>
+
 <div class="clearfix"></div>
 
 
