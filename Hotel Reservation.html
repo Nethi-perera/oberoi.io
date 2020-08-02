@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<title>Hotel Reservation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+{body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+</style>
+<body class="w3-light-grey">
+<style>
+/* Style the header */
+.header {
+  padding: 10px; /* some padding */
+  text-align: left; /* center the text */
+  background: white; /* green backgropund */
+  color: black; /* white text color */
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  font-size: 40px;
+}
+
+.header p {
+  font-size: 20px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden; /* Hide overflow */
+  background-color: #333; /* Dark background color */
+}
+
+/* Style the top navigation bar links */
+.navbar a {
+  float: left; /* Make sure the links stay side-by-side */
+  display: block; /* Change the displayto block, for responsiveness (see below) */
+  color: white; /* White text color */
+  text-align: center; /* Center the text */
+  padding: 14px 20px; /* Add some padding */
+  text-decoration: none; /* Remove underline */
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right; /* Float a link to the right */
+}
+
+/* Change color on hover/mouse-over */
+.navbar a:hover {
+  background-color: purple; /* orange background colour */
+  color: black; /* Black text color */
+}
+
+
+</style>
+
+
+
+<div class="navbar">
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/oberoi.html">Home</a>
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/About.html">About Us</a>
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/contact.html">Contact Us</a>
+  <a href="#">Room</a>
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/Sea_Side_South_Park.html">Hotel Reservation</a>
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/bootstrap%204%20sea%20side%20hotel.html">Multiple Hotel</a>
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/registration.html" class="right">Register Now</a>
+  </div>
+<!-- Header -->
+<header class="w3-display-container w3-content" style="max-width:1500px;">
+  <img class="w3-image" src="Image01.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+  <div class="w3-display-left w3-padding w3-col l6 m8">
+    <div class="w3-container w3-light-blue">
+      <h2><i class="fa fa-bed w3-margin-right"></i>Sea Side South Park</h2>
+    </div>
+    <div class="w3-container w3-white w3-padding-16">
+      <form action="/action_page.php" target="_blank">
+        <div class="w3-row-padding" style="margin:0 -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-calendar-o"></i> Check In</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-calendar-o"></i> Check Out</label>
+            <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
+          </div>
+        </div>
+        <div class="w3-row-padding" style="margin:8px -16px;">
+          <div class="w3-half w3-margin-bottom">
+            <label><i class="fa fa-male"></i> Adults</label>
+            <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+          </div>
+          <div class="w3-half">
+            <label><i class="fa fa-child"></i> Kids</label>
+          <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+          </div>
+        </div>
+        <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1532px;">
+
+  <div class="w3-container w3-margin-top" id="rooms">
+    <h3>Rooms</h3>
+    <p>Be satisfied with the money you spend on us,we gurantee the best sleep you will get will be here!!Sleep well and rest well.</p>
+  </div>
+  
+  <div class="w3-row-padding">
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check In</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m3">
+      <label><i class="fa fa-calendar-o"></i> Check Out</label>
+      <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-male"></i> Adults</label>
+      <input class="w3-input w3-border" type="number" placeholder="0">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-child"></i> Kids</label>
+      <input class="w3-input w3-border" type="number" placeholder="0">
+    </div>
+    <div class="w3-col m2">
+      <label><i class="fa fa-search"></i> Search</label>
+      <button class="w3-button w3-block w3-black">Search</button>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16">
+    <div class="w3-third w3-margin-bottom">
+      <img src="76484184.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Single Room</h3>
+        <h6 class="w3-opacity">From $98</h6>
+        <p>Single bed</p>
+        <p>15m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="100601167.jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Double Room</h3>
+        <h6 class="w3-opacity">From $149</h6>
+        <p>Queen-size bed</p>
+        <p>25m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+    <div class="w3-third w3-margin-bottom">
+      <img src="DSC_0952_re resize (Deluxe Room).jpg" alt="Norway" style="width:100%">
+      <div class="w3-container w3-white">
+        <h3>Deluxe Room</h3>
+        <h6 class="w3-opacity">From $199</h6>
+        <p>King-size bed</p>
+        <p>40m<sup>2</sup></p>
+        <p class="w3-large"><i class="fa fa-bath"></i> <i class="fa fa-phone"></i> <i class="fa fa-wifi"></i> <i class="fa fa-tv"></i> <i class="fa fa-glass"></i> <i class="fa fa-cutlery"></i></p>
+        <button class="w3-button w3-block w3-black w3-margin-bottom">Choose Room</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row-padding" id="about">
+    <div class="w3-col l4 12">
+      <h3>About</h3>
+      <h6>The Sea Side South Park family is here to assist and take care of you at all times.The most comfortable you can be in surroundings is here.</h6>
+    <p>We accept: <i class="fa fa-credit-card w3-large"></i> <i class="fa fa-cc-mastercard w3-large"></i> <i class="fa fa-cc-amex w3-large"></i> <i class="fa fa-cc-cc-visa w3-large"></i><i class="fa fa-cc-paypal w3-large"></i></p>
+    </div>
+    <div class="w3-col l8 12">
+      <!-- Image of location/map -->
+      <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;">
+    </div>
+  </div>
+  
+  <div class="w3-row-padding w3-large w3-center" style="margin:32px 0">
+    <div class="w3-third"><i class="fa fa-map-marker w3-text-red"></i> 456 Nothern street, Negombo, Sri Lanka</div>
+    <div class="w3-third"><i class="fa fa-phone w3-text-red"></i> Phone: +94 760534989</div>
+    <div class="w3-third"><i class="fa fa-envelope w3-text-red"></i> Email: disneyrathnayaka@gmail.com</div>
+  </div>
+
+  <div class="w3-panel w3-light-green  w3-leftbar w3-padding-32">
+    <h6><i class="fa fa-info w3-white w3-padding w3-margin-right"></i> We offer playstation, child care, dog equipment,dog care and other facilities on your demand!</h6>
+  </div>
+
+  <div class="w3-container">
+    <h3 class="w3-red  w3-padding ">Our Hotels</h3>
+    <h6>You can find our hotels around the island:</h6>
+  </div>
+  
+  <div class="w3-row-padding w3-padding-16 w3-text-white w3-large">
+    <div class="w3-half w3-margin-bottom">
+      <div class="w3-display-container">
+        <img src="z_T&C-p29-Jetwing-hotels.jpg" alt="Yala" style="width:50%">
+        <span class="w3-display-bottomleft w3-padding">Yala</span>
+      </div>
+    </div>
+    <div class="w3-half">
+      <div class="w3-row-padding" style="margin:0 -16px">
+        <div class="w3-half w3-margin-bottom ">
+          <div class="w3-display-container">
+            <img src="8b62d6a836c511eab6f90242ac110002.webp" alt="Negombo" style="width:100%">
+            <span class="w3-display-bottomright w3-padding">Negombo</span>
+          </div>
+        </div>
+        <div class="w3-half w3-margin-bottom">
+          <div class="w3-display-container">
+            <img src="jaffna.jpg" alt="Jaffna" style="width:100%">
+            <span class="w3-display-bottomright w3-padding">Jaffna</span>
+          </div>
+        </div>
+      
+        </div>
+      </div>
+    </div>
+  
+
+  <div class="w3-container w3-padding-32 w3-black  w3-card " style="margin:32px 0;">
+    <h2>Get the best offers first!</h2>
+    <p>Join our offical webiste for more offers.</p>
+    <label>E-mail</label>
+    <input class="w3-input w3-border" type="text" placeholder="Your Email address">
+    <button type="button" class="w3-button w3-red w3-margin-top">Subscribe</button>
+  </div>
+
+  <div class="w3-container" id="contact">
+    <h2>Contact</h2>
+    <p>If you have any questions, do not hesitate to ask them.</p>
+    <i class="fa fa-map-marker w3-text-red" style="width:30px"></i> Negombo, Sri Lanka<br>
+    <i class="fa fa-phone w3-text-red" style="width:30px"></i> Phone: +94 777260790<br>
+    <i class="fa fa-envelope w3-text-red" style="width:30px"> </i> Email: disinirathnayaka@gmail.com<br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p><button class="w3-button w3-red w3-padding-large" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+<br><br><br>
+     <!-- footer -->
+     <footer  style="background-color: #2c292f">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 text-center text-md-left ">
+                    
+                    <div class="py-0">
+                        <h3 class="my-4 text-white">About Us<span class="mx-2 font-italic text-warning ">Sea Side South Park</span></h3>
+
+                        <p class="footer-links font-weight-bold">
+                            <a class="text-white" href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/oberoi1.html#">Home</a>
+                            |
+                            <a class="text-white" href="#">Events and Facilities</a>
+                            |
+                            <a class="text-white" href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/About.html">About Us</a>
+                            |
+                            <a class="text-white" href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/contact.html">Contact Us</a>
+                        </p>
+                        <p class="text-light py-4 mb-4">&copy;Sea Side South Park Pvt. Ltd.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-white text-center text-md-left ">
+                    <div class="py-2 my-4">
+                        <div>
+                            <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i>
+                                    456 Nothern street, Negombo, Sri Lanka</p>
+                        </div>
+
+                        <div> 
+                            <p><i class="fa fa-phone  mx-2 "></i> +94 22-27782183</p>
+                        </div>
+                        <div>
+                            <p><i class="fa fa-envelope  mx-2"></i><a href="mailto:support@eduonix.com">support@seasidesouthpark.com</a></p>
+                        </div>  
+                    </div>  
+                </div>
+                
+                <div class="col-md-4 text-white my-4 text-center text-md-left ">
+                    <span class=" font-weight-bold ">About the Company</span>
+          <p class="text-warning my-2" >Best place to spend your tour with us.</p>
+                    <div class="py-2">
+                        <a href="#"><i class="fab fa-facebook fa-2x text-light mx-3"></i></a>
+                        <a href="#"><i class="fab fa-pinterest fa-2x text-light mx-3"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x text-light mx-3"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x text-light mx-3"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x text-light mx-3"></i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+
+     </footer>
+     <!-- end of footer -->
+
+
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+</body>
+</html>
