@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!--navbar-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	 <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="title icon" type="image/png" href="images/title-img.png"/>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- fontawesome-->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+<script defer src="C:\Users\Hp\Desktop\GitHub\hotel-website\login\script for login.js"></script>
+
+</head>
+ <style>
+   body{
+    background-image: url(mint.jpg);
+   }
+    h1{
+     font-family: "Sofia";
+         font-size: 30px;
+           }
+  /*navbar*/
+      body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #0b8768;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #8bc41f;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #bfe094;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+ </style>
+
+
+<body>
+    <h1 style="color:black" align="center"><i>Sea Side South Park</i></h1>
+    <h2 style="color:#857d42" align="center">Sri Lanka</h2>
+  <!--navbar-->
+     <div class="navbar">
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/home/oberoi.html">Home</a>
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/About.html">About Us</a>
+  <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/contact/contact.html">Contact Us</a>
+  <div class="dropdown">
+
+    <button class="dropbtn"><a href="">Room</a>
+   <!-- <i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Check Availability</a>
+      <a href="#">Booking</a>
+      
+    </div>
+  </div>
+  
+   <div class="dropdown">
+    <button class="dropbtn"><a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/Sea_Side_South_Park.html">Hotel Reservation</a>
+      <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="">Booking</a>
+      
+    </div>
+  </div>
+     
+      <div class="dropdown">
+    <button class="dropbtn"><a href="C:\Users\nethma\Desktop\git hub website\hotel-website\bootstrap 4 sea side hotel.html">Multiple Hotel</a>
+     <!-- <i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="#">View Photo Gallery</a>
+      <a href="#">Hotel Facilities</a>
+      <a href="">Map</a>
+      </div>
+    </div>
+    
+     <div class="dropdown">
+    <button class="dropbtn"><a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/registration/registration.html">Registration</a>
+      <!--<i class="fa fa-caret-down"></i>-->
+    </button>
+    <div class="dropdown-content">
+      <a href="">Login</a>
+     
+      </div>
+    </div>
+</div>
+
+
+<!-- Material form login -->
+<div class="card">
+
+  <h5 class="card-header info-color white-text text-center py-4">
+    <strong>Sign in</strong>
+  </h5>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+  
+    <!-- Form -->
+    <form class="text-center" style="color: #757575; margin-right:25%; margin-left:25%;" action="#">
+    
+      <!-- Email -->
+      <div class="md-form">
+      	<label for="materialLoginFormEmail"><b>E-mail</b></label>
+        <input type="email" id="materialLoginFormEmail" class="form-control" required="">
+        
+      </div>
+
+      <!-- Password -->
+      <div class="md-form">
+       <label for="materialLoginFormPassword"><b>Password</b></label>
+        <input type="password" id="materialLoginFormPassword" class="form-control" required="">
+       
+      </div>
+
+      <div class="d-flex justify-content-around">
+        <div>
+          <!-- Remember me -->
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="materialLoginFormRemember">
+            <label class="form-check-label" for="materialLoginFormRemember">Remember me</label>
+          </div>
+        </div>
+        <div>
+          <!-- Forgot password -->
+          <a href="">Forgot password?</a>
+        </div>
+      </div>
+
+      <!-- Sign in button -->
+      <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">Sign in</button>
+
+      <!-- Register -->
+      <p>Not a member?
+        <a href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/registration.html">Register</a>
+      </p>
+
+      <!-- Social login -->
+      <p>or sign in with:</p>
+      <a type="button" class="btn-floating btn-fb btn-sm">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a type="button" class="btn-floating btn-tw btn-sm">
+        <i class="fab fa-pinterest"></i>
+      </a>
+      <a type="button" class="btn-floating btn-li btn-sm">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a type="button" class="btn-floating btn-git btn-sm">
+        <i class="fab fa-instagram"></i>
+      </a>
+    
+    </form>
+    <!-- Form -->
+
+  </div>
+
+</div>
+
+
+<!-- footer -->
+
+      <footer  style="background-color: #2c292f">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-4 text-center text-md-left ">
+                    
+                    <div class="py-0">
+                        <h3 class="my-4 text-white">About Us<span class="mx-2 font-italic text-warning ">Sea Side South Park</span></h3>
+
+                        <p class="footer-links font-weight-bold">
+                            <a class="text-white" href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/oberoi.html">Home</a>
+                            |
+                            <a class="text-white" href="#">Events and Facilities</a>
+                            |
+                            <a class="text-white" href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/About.html">About Us</a>
+                            |
+                            <a class="text-white" href="file:///C:/Users/nethma/Desktop/git%20hub%20website/hotel-website/contact.html">Contact Us</a>
+                        </p>
+                        <p class="text-light py-4 mb-4">&copy;Sea Side South Park Pvt. Ltd.</p>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 text-white text-center text-md-left ">
+                    <div class="py-2 my-4">
+                        <div>
+                            <p class="text-white"> <i class="fa fa-map-marker mx-2 "></i>
+                                    456 Nothern street, Negombo, Sri Lanka</p>
+                        </div>
+
+                        <div> 
+                            <p><i class="fa fa-phone  mx-2 "></i> +94 22-27782183</p>
+                        </div>
+                        <div>
+                            <p><i class="fa fa-envelope  mx-2"></i><a href="mailto:support@eduonix.com">support@seasidesouthpark.com</a></p>
+                        </div>  
+                    </div>  
+                </div>
+                
+                <div class="col-md-4 text-white my-4 text-center text-md-left ">
+                    <span class=" font-weight-bold ">About the Company</span>
+          <p class="text-warning my-2" >Best place to spend your tour with us.</p>
+                    <div class="py-2">
+                        <a href="#"><i class="fab fa-facebook fa-2x text-light mx-3"></i></a>
+                        <a href="#"><i class="fab fa-pinterest fa-2x text-light mx-3"></i></a>
+                        <a href="#"><i class="fab fa-twitter fa-2x text-light mx-3"></i></a>
+                        <a href="#"><i class="fab fa-youtube fa-2x text-light mx-3"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x text-light mx-3"></i></a>
+                    </div>
+                </div>
+            </div>  
+        </div>
+     </footer>
+     <!-- end of footer -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</div> 
+</footer>
+</body>
+</html>
