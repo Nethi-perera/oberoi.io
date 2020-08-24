@@ -15,6 +15,61 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
     <!-- fontawesome-->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+
+    <!-- javascript for the validation of the forms -->
+
+    <script> 
+function validateform()                                    
+{ 
+    var name = document.forms["Regform"]["full name"];               
+    var email = document.forms["Regform"]["email"];    
+    var phone = document.forms["Regform"]["phone"];  
+    var password =  document.forms["Regform"]["psw"];  
+    var confirm password = document.forms["RegForm"]["psw-repeat"];  
+    
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+   
+       
+    if (email.value == "" || email.value == "@")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (phone.value == "" || phone.value<=10)                           
+    { 
+        window.alert("Please a valid telephone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+   
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    } 
+   
+    if (Confirm password.value == ""|| Confirm password.value!=password.value)                  
+    { 
+        alert("Please enter password."); 
+        what.focus(); 
+        return false; 
+    } 
+   
+    return true; 
+}</script> 
+
+
+
+
+
 </head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <body>
@@ -219,12 +274,12 @@ a {
    <h1 class="glow">REGISTER</h1>
     <p id="main">Please fill in this form to create an account.</p>
   
-<form action="action_page.php" style="margin-left: 25%; margin-right: 25%">
+<form name="RegForm" action="action_page.php" style="margin-left: 25%; margin-right: 25%" onsubmit="return validateform()">
 	
     <hr>
    
     <label for="full name"><b>Full Name</b></label>
-    <input type="text" placeholder="Enter Full Name" name="full name" id="full name" required>
+    <input type="text" placeholder="Enter Full Name" name="full name" id="full name">
     
      <p>Please select your gender:</p>
    <label for="gender"><b>Gender</b></label><br>
